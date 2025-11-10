@@ -70,7 +70,9 @@ function TodoItem({ todo }) {
             return "Tidak ada deskripsi.";
         }
         // 1. Hilangkan semua tag HTML (termasuk tag <p>)
-        const plainText = htmlString.replace(/<[^>]*>?/gm, "");
+        const plainText = htmlString
+            .replace(/<[^>]*>?/gm, "") // 1. Hapus semua tag HTML
+            .replace(/&nbsp;/g, " "); // 2. Ganti &nbsp; dengan spasi biasa
         // 2. Jika setelah dibersihkan teksnya kosong (misal hanya berisi <img>), kembalikan default
         if (plainText.trim() === "") {
             return "(Deskripsi hanya berisi gambar/media.)";
