@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, router } from "@inertiajs/react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 
 export default function AppLayout({ children }) {
     const onLogout = () => {
