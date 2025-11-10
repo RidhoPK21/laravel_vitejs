@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AppLayout from "@/Layouts/AppLayout";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/Components/ui/button";
 import {
     Card,
     CardContent,
@@ -8,9 +8,9 @@ import {
     CardHeader,
     CardTitle,
     CardFooter,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+} from "@/Components/ui/card";
+import { Input } from "@/Components/ui/input";
+import { Field, FieldGroup, FieldLabel } from "@/Components/ui/field";
 import { useForm, usePage, router, Link } from "@inertiajs/react";
 import {
     Check,
